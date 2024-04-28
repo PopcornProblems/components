@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>
+        Chris P Audio Selector
+    </mat-card-title>
+    <mat-card-content>
+        <mat-slider min="1" max="11" step="1"  showTickMarks discrete
+        [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+    </mat-card-content>
+    <p>Most audio only goes to 10, ours goes all the way to 11</p>
+</mat-card>

@@ -17,6 +17,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatSliderModule} from '@angular/material/slider';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,8 @@ import { ChsAdditionComponent } from './chs-addition/chs-addition.component';
 import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
 import { CajNumberComponent } from './caj-number/caj-number.component';
 import { EmmSubtractionComponent } from './emm-subtraction/emm-subtraction.component';
+import { TakeItToElevenComponent } from './take-it-to-eleven/take-it-to-eleven.component';
+
 
 @NgModule({
   declarations: [
@@ -46,8 +49,9 @@ import { EmmSubtractionComponent } from './emm-subtraction/emm-subtraction.compo
     NumberGeneratorComponent,
     ChsAdditionComponent,
     CebAdditionComponent,
-    CajNumberComponent,
+    CajNumberComponent,    
     EmmSubtractionComponent,
+    TakeItToElevenComponent,
   ],
 
   imports: [
@@ -66,6 +70,7 @@ import { EmmSubtractionComponent } from './emm-subtraction/emm-subtraction.compo
     MatRadioModule,
     MatButtonToggleModule
     ,
+    MatSliderModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
